@@ -1,109 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <head>
     <meta charset="UTF-8">
-    <title>Muaaviya's Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muaaviya Ansari - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
 </head>
-<body>
-    <table cellspacing="20">
-        <tr>
-            <td><img src="images/muaaviya.jpeg" alt="This is my picture"></td>
-            <td><h1>Muaaviya Ansari</h1>
-                <p><em><a href="https://en.wikipedia.org/wiki/Computer_science">Computer Science</a> Undergraduate.</em></p>
-                <p>I am a CS student and graphic designer, also i am into fashion.</p></td>
-        </tr>
-    </table>
-    <hr>
 
-    <h3>Educations</h3>
-    <ul>
-        <li>Madni High School</li>
-        <li>K.H.M.W Junior College of Science</li>
-        <li>M. H. Saboo Siddik College of Engineering</li>
-    </ul>
+<body class="font-sans">
+    <header class="text-center py-16">
+        <h1 class="text-4xl font-bold mb-4">Muaaviya Ansari</h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+            Passionate web developer and designer with expertise in AI & ML
+        </p>
+    </header>
 
-    <h3><a href="hobbies.html">My Hobbies</a></h3>
+    <div class="bento-grid">
+        <!-- About Section -->
+        <div class="bento-item col-span-2">
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+            <p class="text-gray-300">
+                Dedicated web developer and designer with a keen interest in artificial intelligence
+                and machine learning. Proficient in creating visually appealing, user-friendly websites
+                with a strong focus on functionality and performance.
+            </p>
+        </div>
 
-    <hr>
-    <h3>Social Media</h3>
-    <ul>
-        <li><a href="https://www.instagram.com/muaaviyaansari007/">Instagram</a></li>
-        <li><a href="https://www.github.com/Muaaviya">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/muaaviya-ansari-33b66b252/">LinkedIn</a></li>
-    </ul>
-    <hr>
-    <h3>Work Experience</h3>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Dates</th>
-                <th>Work</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2015-2018</td>
-                <td>Aadhaar Center</td>
-            </tr>
-            </tr>
-            <tr>
-                <td>2018-2019</td>
-                <td>Computer Educator</td>
-            </tr>
-            <tr>
-                <td>2020-Currently</td>
-                <td>Freelance Graphic Designer</td>
-            </tr>
-            <tr>
-                <td>2023-Currently</td>
-                <td>Web Developer</td>
-            </tr>
-            </tr>
-            <tr>
-                <td>2023-Currently</td>
-                <td>IEEE volunteer</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h3>Skills</h3>
-    <table border="1px cellspacing="10px">
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <td>Web Development</td>
-                        <td>&#11088 &#11088 &#11088 &#11088</td>
-                    </tr>
-                    <tr>
-                        <td>C/C++</td>
-                        <td>&#11088 &#11088 &#11088 &#11088 </td>
-                    </tr>
-                    <tr>
-                        <td>JAVA</td>
-                        <td>&#11088 &#11088 &#11088 </td>
-                    </tr>
-                    <tr>
-                        <td>SQL</td>
-                        <td>&#11088 &#11088 &#11088 </td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <td>Graphic Design</td>
-                        <td>&#11088 &#11088 &#11088 &#11088 &#11088 </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+        <!-- Contact Info -->
+        <div class="bento-item">
+            <h2 class="text-2xl font-bold mb-4">Contact</h2>
+            <p class="text-gray-300">📍 Andheri, Mumbai-102</p>
+            <p class="text-gray-300">📱 +91 9619094956</p>
+            <p class="text-gray-300">✉️ muaaviyaansari007@gmail.com</p>
+        </div>
 
-    <h3><a href="contactMe.html">Contact Me</a></h3>
-    
-    
+        <!-- Education -->
+        <div class="bento-item">
+            <h2 class="text-2xl font-bold mb-4">Education</h2>
+            <h3 class="text-xl font-semibold">B.E. in Computer Science (AI & ML)</h3>
+            <p class="text-gray-300">M.H. Saboo Siddik College of Engineering</p>
+            <p class="text-gray-300">Dec 2021 - May 2025</p>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="bento-item col-span-2">
+            <h2 class="text-2xl font-bold mb-4">Technical Skills</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Languages & Databases</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-button">Python</span>
+                        <span class="skill-button">C</span>
+                        <span class="skill-button">C++</span>
+                        <span class="skill-button">Java</span>
+                        <span class="skill-button">JavaScript</span>
+                        <span class="skill-button">SQL</span>
+                        <span class="skill-button">MongoDB</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Frameworks & Libraries</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-button">ReactJS</span>
+                        <span class="skill-button">NodeJS</span>
+                        <span class="skill-button">NextJS</span>
+                        <span class="skill-button">OpenCV</span>
+                        <span class="skill-button">PyTorch</span>
+                        <span class="skill-button">ExpressJS</span>
+                        <span class="skill-button">Tailwind CSS</span>
+                        <span class="skill-button">TypeScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="bento-item col-span-3">
+            <h2 class="text-2xl font-bold mb-4">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="p-4 rounded-lg bg-purple-900">
+                    <h3 class="text-xl font-bold mb-2">ONE'stop</h3>
+                    <p class=" ">An online platform providing students with easy access to academic
+                        materials. Enhanced student learning experience by 37%.</p>
+                </div>
+                <div class="p-4 rounded-lg bg-purple-900">
+                    <h3 class="text-xl font-bold mb-2">Character Recognition</h3>
+                    <p class="text-gray-300">Cutting-edge character recognition software using Neural Networks and AI
+                        for enhanced accuracy.</p>
+                </div>
+                <div class="p-4 rounded-lg bg-purple-900">
+                    <h3 class="text-xl font-bold mb-2">Celebrity Lookalike</h3>
+                    <p class="text-gray-300">Face Recognition system that finds celebrity lookalikes using advanced ML
+                        algorithms.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="bento-item col-span-3">
+            <h2 class="text-2xl font-bold mb-6 text-center">Contact Me</h2>
+            <form class="max-w-2xl mx-auto" id="contactForm">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <input type="text" placeholder="Your Name" class="contact-input" required>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email" class="contact-input" required>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <input type="text" placeholder="Subject" class="contact-input" required>
+                </div>
+                <div class="mb-4">
+                    <textarea placeholder="Your Message" class="contact-input" rows="4" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="submit-button">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="text-center py-8 text-gray-400">
+        <p>© 2025 Muaaviya Ansari. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
 </body>
+
 </html>
